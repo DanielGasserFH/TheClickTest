@@ -68,32 +68,26 @@ body{
   background: url("Bilder/hintergrund.jpg");
 }
 
-.loginForm{
-  width: 24%;
-  position: absolute;
-  top: 200px;
-  left: 250px;
 
-          h2{
-            font-size: 40px;
-            color: $white;
-            text-align: center;
-            margin-bottom: 50px;
-            font-family: Verdana;
-            }
-
-
-            label{
-              font-weight: bold;
-              color: $white;
-            }
-
-            .form-check label{
-              color: $white;
-              font-size: 12px;
-            }
-
+h2{
+  font-size: 40px;
+  color: $white;
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: Verdana;
 }
+
+
+label{
+  font-weight: bold;
+  color: $white;
+}
+
+.form-check label{
+  color: $white;
+  font-size: 12px;
+}
+
 
 button{
   margin-top: 10px;

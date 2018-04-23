@@ -1,6 +1,6 @@
 <?php
 
-define('URL_PATH', '/TheClick');
+define('URL_PATH', '/TheClickTest/TheClick/bootstrap');
 
 define('LOGIN_URL', 'login');
 define('LOGOUT_URL', 'logout');
