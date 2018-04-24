@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="css/bootstrap-grid.css">
 
     <style>
-        .testklasse {background-color: #FFFFFF;}
-        .testklasse2 { border-radius: 50%; background-color: #FFFFFF; height: 100px; width: 100px;text-align: center; padding-top: 35px}
-        .testbutton { width: 100%; height: 90%;}
+        .testklasse {background-color: #FFFFFF; position: relative}
+        .testklasse2 { border-radius: 50%; background-color: #FFFFFF; height: 100px; width: 100px;
+        position:absolute; z-index: 2;top:50%; left: 50%; margin-left: -50px; margin-top: -55px;
+            text-align: center;}
+        .testbutton { display: block}
     </style>
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
@@ -40,16 +42,15 @@
     <button onclick="startGame()" id="startg3">Start</button>
     <button onclick="resetGame()" id="resetg3">Reset</button>
 </div>
-<div class="container loginForm">
-    <div class="row testklasse">
+<div class="container loginForm testklasse">
+    <div class="row">
         <div class="col "><button class="btn btn-danger testbutton" onclick="checkRed()" id="red">Red</button></div>
         <div class="col"><button class="btn btn-primary testbutton" onclick="checkBlue()" id="blue">Blue</button></div>
     </div>
     <div class="row justify-content-center">
         <div class="testklasse2" id="randomc"></div>
-
     </div>
-    <div class="row testklasse">
+    <div class="row">
         <div class="col"><button class="btn btn-success testbutton" onclick="checkGreen()" id="green">Green</button></div>
         <div class="col"><button class="btn btn-warning testbutton" onclick="checkYellow()" id="yellow">Yellow</button></div>
     </div>
