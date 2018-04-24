@@ -5,8 +5,19 @@ echo $this->header;
 ?>
 
     <?php if($this->registerSuccessful): ?>
-    <h1>Registrierung erfolgreich ... hier gehts zum login</h1>
+    <!--<h1>Registrierung erfolgreich ... hier gehts zum login</h1>-->
+    <div id="main">
+        <div class="row">
+            <h1 class="col-xs-12">Registierung erfolgreich</h1>
+            <p class="col-xs-12">Sie haben sich nun registiert. <a href="login">Klicken Sie hier um sich anzumelden.</a></p>
+        </div>
+    </div>
     <?php else: ?>
+    div class="container">
+    <div class="row">
+        <div class="col-lg-1 d-xs-none d-lg-block"></div>
+        <div class="col-lg-4 col-xs-12 pt-lg-5 mt-lg-5">
+
     <form class="loginForm" method="post">
         <div class="hintergrundBlack">
             <h2>Create account</h2>
@@ -37,6 +48,12 @@ echo $this->header;
         <input type="hidden" name="action" value="register">
 
     </form>
+
+    </div>
+    <div class="col-lg-12 d-xs-none d-md-block"></div>
+    </div>
+    </div>
+
     <?php endif; ?>
 
 

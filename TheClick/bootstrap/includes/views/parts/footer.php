@@ -1,7 +1,7 @@
-</div>
+<!--</div>
 <div class="col-lg-12 d-xs-none d-md-block"></div>
 </div>
-</div>
+</div>-->
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
