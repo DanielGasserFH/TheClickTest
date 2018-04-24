@@ -3,6 +3,7 @@ var count = document.getElementById("score");
 var anzahlg3 = 0;
 var secondsg3 = 25;
 count.innerHTML = anzahlg3
+document.getElementById("timer3").innerHTML = secondsg3 + "s";
 var colors = ["red","blue","green","yellow"];
 var counting3 = false;
 var timerinterval3 = null;
@@ -11,7 +12,7 @@ function startGame(){
     if(timerinterval3 == null){
         timerinterval3 = setInterval(timerg3,1000)
         counting3 = true;
-        document.getElementById("randomc").innerHTML = colors[Math.floor(Math.random()*4)]
+        randomcolor.innerHTML = colors[Math.floor(Math.random()*4)]
         console.log("erfolgreich")
     }
 }
@@ -20,6 +21,7 @@ function resetGame() {
     secondsg3 = 25;
     anzahlg3 = 0;
     counting3 = false;
+    document.getElementById("timer3").innerHTML = secondsg3 + "s";
 }
 
 
@@ -64,9 +66,10 @@ function timerg3(){
     document.getElementById("timer3").innerHTML = secondsg3 + "s"
     if (secondsg3 <= 0) {
         document.getElementById("timer3").innerHTML = "Game Over";
+        randomcolor.innerHTML = "Game Over"
         // Anzahl speichern
         counting3=false;
-        clearInterval(timerInterval3);
-        timerInterval3 = null;
+        clearInterval(timerinterval3);
+        timerinterval3 = null;
     }
 }
