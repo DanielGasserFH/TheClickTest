@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
 
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
@@ -27,15 +28,22 @@
 </nav>
 <!--<div class="hintergrund"></div>
 <div class="game3">Game 3 </div>-->
-<div id="randomc"></div>
 <div id="score"></div>
 <button type="button" id="timer3"></button>
 <button onclick="startGame()" id="startg3">Start</button>
 <button id="resetg3">Reset</button>
-<div class="col-6"><button onclick="checkRed()" id="red">Red</button></div>
-<div class="col-6"><button onclick="checkBlue()" id="blue">Blue</button></div>
-<div class="col-6"><button onclick="checkGreen()" id="green">Green</button></div>
-<div class="col-6"><button onclick="checkYellow()" id="yellow">Yellow</button></div>
+<div>
+    <div class="row">
+        <div class="col"><button onclick="checkRed()" id="red">Red</button></div>
+        <div class="col"><button onclick="checkBlue()" id="blue">Blue</button></div>
+    </div>
+    <div class="row justify-content-center"><div id="randomc"></div></div>
+    <div class="row">
+        <div class="col"><button onclick="checkGreen()" id="green">Green</button></div>
+        <div class="col"><button onclick="checkYellow()" id="yellow">Yellow</button></div>
+    </div>
+</div>
+
 
 
 
