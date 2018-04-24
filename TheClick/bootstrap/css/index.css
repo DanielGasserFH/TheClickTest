@@ -1,5 +1,6 @@
+/* line 6, ../scss/index.scss */
 body {
-  background: url("../Bilder/hintergrund.jpg") no-repeat center center fixed;
+  background: url(../Bilder/hintergrund.jpg) no-repeat center center fixed;
   font-family: "Open Sans";
   font-size: 16px;
   font-weight: 600;
@@ -50,56 +51,97 @@ body {
                       width: 1000px;
                       height: 800px;
 
-                    }*/ }
+                    }*/
+}
 
+/* line 67, ../scss/index.scss */
 .hintergrund {
-  background: url("../Bilder/hintergrund.jpg"); }
+  background: url("../Bilder/hintergrund.jpg");
+}
 
+/* line 72, ../scss/index.scss */
 h2 {
   font-size: 40px;
   color: #FFFFFF;
   text-align: center;
   margin-bottom: 50px;
-  font-family: Verdana; }
+  font-family: Verdana;
+}
 
+/* line 81, ../scss/index.scss */
 label {
   font-weight: bold;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+}
 
+/* line 86, ../scss/index.scss */
 .form-check label {
   color: #FFFFFF;
-  font-size: 12px; }
+  font-size: 12px;
+}
 
+/* line 92, ../scss/index.scss */
 .loginForm button {
   margin-top: 10px;
   width: 100%;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+}
 
+/* line 98, ../scss/index.scss */
 .social {
   color: #FFFFFF;
   font-size: 12px;
-  text-align: center; }
+  text-align: center;
+}
 
+/* line 103, ../scss/index.scss */
 .signIn {
   text-align: center;
   font-size: 12px;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+}
 
+/* line 110, ../scss/index.scss */
 .netzwerke {
   width: 500px;
-  margin-bottom: 20px; }
-  .netzwerke img {
-    height: auto; }
+  margin-bottom: 20px;
+}
+/* line 114, ../scss/index.scss */
+.netzwerke img {
+  height: auto;
+}
 
+/* line 120, ../scss/index.scss */
 .signIn a {
-  color: #00FF00; }
+  color: #00FF00;
+}
 
 @media only screen and (max-width: 768px) {
+  /* line 126, ../scss/index.scss */
   .netzwerke {
     width: 100px;
-    height: auto; }
+    height: auto;
+  }
 
+  /* line 132, ../scss/index.scss */
   .loginForm {
-    left: 150px; } }
+    left: 150px;
+  }
+}
+/* line 138, ../scss/index.scss */
+.btn.facebook {
+  background-color: #3c5a96;
+  border-color: #3c5a96;
+}
 
-/*# sourceMappingURL=index.css.map */
+/* line 143, ../scss/index.scss */
+.btn.twitter {
+  background-color: #c1deec;
+  border-color: #c1deec;
+}
+
+/* line 148, ../scss/index.scss */
+.btn.gplus {
+  background-color: #da4b3e;
+  border-color: #da4b3e;
+}

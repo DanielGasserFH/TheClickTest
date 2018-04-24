@@ -5,7 +5,7 @@
  */
 class IndexController extends Controller
 {
-	protected $viewFileName = "index"; //this will be the View that gets the data...
+	protected $viewFileName = "main"; //this will be the View that gets the data...
 	protected $loginRequired = true;
 
 
@@ -14,7 +14,7 @@ class IndexController extends Controller
 		$this->view->title = "Übersicht";
 		$this->view->username = $this->user->username;
 
-		$this->view->addresses = AddressModel::getAddressesByUserId($this->user->id);
+		//$this->view->addresses = AddressModel::getAddressesByUserId($this->user->id);
 	}
 
 }

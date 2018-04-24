@@ -1,8 +1,14 @@
-body {
-  background: url("../Bilder/hintergrund.jpg") no-repeat center center fixed;
+$white: #FFFFFF;
+$green: #00FF00;
+
+
+
+body{
+  background: url(../Bilder/hintergrund.jpg) no-repeat center center fixed;
   font-family: "Open Sans";
   font-size: 16px;
   font-weight: 600;
+
                       /*.game1{
                         margin: 0 auto;
                         margin-top: 60px;
@@ -50,56 +56,98 @@ body {
                       width: 1000px;
                       height: 800px;
 
-                    }*/ }
+                    }*/
 
-.hintergrund {
-  background: url("../Bilder/hintergrund.jpg"); }
 
-h2 {
+
+
+
+ }
+
+.hintergrund{
+  background: url("../Bilder/hintergrund.jpg");
+}
+
+
+h2{
   font-size: 40px;
-  color: #FFFFFF;
+  color: $white;
   text-align: center;
   margin-bottom: 50px;
-  font-family: Verdana; }
+  font-family: Verdana;
+}
 
-label {
+
+label{
   font-weight: bold;
-  color: #FFFFFF; }
+  color: $white;
+}
 
-.form-check label {
-  color: #FFFFFF;
-  font-size: 12px; }
+.form-check label{
+  color: $white;
+  font-size: 12px;
+}
 
-.loginForm button {
+
+.loginForm button{
   margin-top: 10px;
   width: 100%;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+}
 
-.social {
-  color: #FFFFFF;
+.social{
+  color: $white;
   font-size: 12px;
-  text-align: center; }
-
-.signIn {
+  text-align: center;
+}
+.signIn{
   text-align: center;
   font-size: 12px;
-  color: #FFFFFF; }
+  color: $white;
+}
 
-.netzwerke {
+
+.netzwerke{
   width: 500px;
-  margin-bottom: 20px; }
-  .netzwerke img {
-    height: auto; }
+  margin-bottom: 20px;
 
-.signIn a {
-  color: #00FF00; }
+            img {
+              height: auto;
+            }
+
+}
+
+.signIn a{
+color: $green;
+}
+
 
 @media only screen and (max-width: 768px) {
-  .netzwerke {
+  .netzwerke{
     width: 100px;
-    height: auto; }
+    height: auto;
+
+  }
 
   .loginForm {
-    left: 150px; } }
+    left: 150px;
+  }
 
-/*# sourceMappingURL=index.css.map */
+}
+
+.btn.facebook {
+  background-color:#3c5a96;
+  border-color:#3c5a96;
+}
+
+.btn.twitter {
+  background-color:#c1deec;
+  border-color:#c1deec;
+}
+
+.btn.gplus {
+  background-color:#da4b3e;
+  border-color:#da4b3e;
+}
+
+

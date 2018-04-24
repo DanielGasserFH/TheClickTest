@@ -1,5 +1,5 @@
 body {
-  background: url("../Bilder/hintergrund.jpg") no-repeat center center fixed;
+  background: url(../Bilder/hintergrund.jpg) no-repeat center center fixed;
   font-family: "Open Sans";
   font-size: 16px;
   font-weight: 600;
@@ -101,5 +101,16 @@ label {
 
   .loginForm {
     left: 150px; } }
+.btn.facebook {
+  background-color: #3c5a96;
+  border-color: #3c5a96; }
+
+.btn.twitter {
+  background-color: #c1deec;
+  border-color: #c1deec; }
+
+.btn.gplus {
+  background-color: #da4b3e;
+  border-color: #da4b3e; }
 
 /*# sourceMappingURL=index.css.map */

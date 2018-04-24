@@ -85,9 +85,9 @@ class User extends Database
 
 	public function login($username, $password)
 	{
-		$sql = "SELECT `id`,`password` FROM `user` WHERE `name`='" . $this->escapeString($username) . "'";
-		$result = $this->query($sql);
 
+		$sql = "SELECT `playerid`,`passwort` FROM `players` WHERE `username`='" . $this->escapeString($username) . "' OR `email`='" . $this->escapeString($username) . "'";
+		$result = $this->query($sql);
 
 		if($this->numRows($result) == 0)
 		{
@@ -98,7 +98,11 @@ class User extends Database
 		//now lets check for the password
 		$row = $this->fetchObject($result);
 
-		if(password_verify($password, $row->password))
+		var_dump($row);
+
+		var_dump(password_verify($password, $row->passwort));
+
+		if(password_verify($password, $row->passwort))
 		{
 			$this->username = $username;
 			$this->id = $row->id;
@@ -114,7 +118,7 @@ class User extends Database
 	public static function getById($id)
 	{
 		$id = intval($id);
-		$sql = "SELECT * FROM `user` WHERE `id`=".$id;
+		$sql = "SELECT * FROM `players` WHERE `playerid`=".$id;
 
 		$db = new Database();
 		$result = $db->query($sql);
@@ -177,7 +181,7 @@ class User extends Database
 		$db = new Database();
 
 		//check if user exists...
-		$sql = "SELECT COUNT(`id`) AS num FROM `user` WHERE `name`='".$db->escapeString($username)."'";
+		$sql = "SELECT COUNT(`playerid`) AS num FROM `players` WHERE `username`='".$db->escapeString($username)."'";
 		$result = $db->query($sql);
 
 		$row = $db->fetchObject($result);
@@ -195,9 +199,10 @@ class User extends Database
 		$db = new Database();
 
 		$username = $db->escapeString($data['username']);
+		$email = $db->escapeString($data['email']);
 		$password = password_hash($db->escapeString($data['password']), PASSWORD_BCRYPT);
 
-		$sql = "INSERT INTO `user`(`name`,`password`) VALUES('".$username."','".$password."')";
+		$sql = "INSERT INTO `players`(`username`,`passwort`,`email`) VALUES('".$username."','".$password."','".$email."')";
 		$db->query($sql);
 	}
 
