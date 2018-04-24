@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Erstellungszeit: 21. Apr 2018 um 23:34
+-- Erstellungszeit: 24. Apr 2018 um 10:39
 -- Server-Version: 10.1.30-MariaDB
 -- PHP-Version: 7.2.2
 
@@ -34,6 +34,10 @@ CREATE TABLE `game` (
   `overallPlaytime` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- RELATIONEN DER TABELLE `game`:
+--
+
 -- --------------------------------------------------------
 
 --
@@ -44,15 +48,22 @@ CREATE TABLE `players` (
   `playerid` int(11) NOT NULL,
   `username` varchar(50) CHARACTER SET utf8 NOT NULL,
   `email` varchar(50) CHARACTER SET utf8 NOT NULL,
-  `passwort` varchar(50) CHARACTER SET utf8 NOT NULL
+  `passwort` varchar(100) CHARACTER SET utf8 NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- RELATIONEN DER TABELLE `players`:
+--
 
 --
 -- Daten für Tabelle `players`
 --
 
 INSERT INTO `players` (`playerid`, `username`, `email`, `passwort`) VALUES
-(1, 'Daniel', 'ad.gasser@outlook.com', 'daniel');
+(1, 'Daniel', 'ad.gasser@outlook.com', 'daniel'),
+(2, 'test', '', '$2y$10$e7trihysVU62n7w9Leq0pOVQeyVzFu1wFd49jQ20cd9'),
+(3, 'test2', 'test@test.de', '$2y$10$sfGoptgf6Z1/4zBfb26rbebZEm/EZxdEFDGRl.NBtoD'),
+(4, 'test4', 'test2@test.de', '$2y$10$BjpwU/SxPSR19qVGF6qRHuepw6LGpsEjMbd.SBnDD558lj0wa5Qum');
 
 -- --------------------------------------------------------
 
@@ -67,6 +78,14 @@ CREATE TABLE `rounds` (
   `playerid` int(11) NOT NULL,
   `gameid` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- RELATIONEN DER TABELLE `rounds`:
+--   `gameid`
+--       `game` -> `gameid`
+--   `playerid`
+--       `players` -> `playerid`
+--
 
 --
 -- Indizes der exportierten Tabellen
@@ -106,7 +125,7 @@ ALTER TABLE `game`
 -- AUTO_INCREMENT für Tabelle `players`
 --
 ALTER TABLE `players`
-  MODIFY `playerid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `playerid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT für Tabelle `rounds`
@@ -122,8 +141,8 @@ ALTER TABLE `rounds`
 -- Constraints der Tabelle `rounds`
 --
 ALTER TABLE `rounds`
-  ADD CONSTRAINT `rounds_ibfk_1` FOREIGN KEY (`gameid`) REFERENCES `game` (`gameid`),
-  ADD CONSTRAINT `rounds_ibfk_2` FOREIGN KEY (`playerid`) REFERENCES `players` (`playerid`);
+  ADD CONSTRAINT `rounds_ibfk_1` FOREIGN KEY (`gameid`) REFERENCES `game` (`gameid`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `rounds_ibfk_2` FOREIGN KEY (`playerid`) REFERENCES `players` (`playerid`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

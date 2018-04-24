@@ -3,6 +3,10 @@
 echo $this->header;
 
 ?>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-1 d-xs-none d-lg-block"></div>
+            <div class="col-lg-4 col-xs-12 pt-lg-5 mt-lg-5">
     <form class="loginForm" method="post">
         <div class="hintergrundBlack">
             <h2>Login</h2>
@@ -22,11 +26,6 @@ echo $this->header;
                 <a href="http://www.twitter.com/" target="_blank" class="btn btn-primary twitter col-12 col-lg-4"><i class="fa fa-twitter mr-1"></i>Twitter</a>
                 <a href="http://www.faceboook.com/" target="_blank" class="btn btn-primary gplus col-12 col-lg-4"><i class="fa fa-google-plus mr-1"></i>Google</a>
             </div>
-            <!--<div class="netzwerke">
-                <a href="www.facebook.com" target="_blank"> <img src="Bilder/facebook.png"  width="150" height="43" alt="Facebook" /></a>
-                <a href="www.twitter.com" target="_blank"> <img src="Bilder/twitter.png" width="150" height="43" alt="Twitter" /></a>
-                <a href="www.google.com" target="_blank"> <img src="Bilder/google_plus.png" width="150" height="43" alt="Google" /></a>
-            </div>-->
 
             <div class="signIn">
                 <p>Don´t have an account? <a href="registierung.html"> Register</a></p>
@@ -37,6 +36,11 @@ echo $this->header;
         <input type="hidden" name="action" value="login">
 
     </form>
+            </div>
+            <div class="col-lg-12 d-xs-none d-md-block"></div>
+        </div>
+    </div>
+
 <?php
 
 echo $this->footer;
