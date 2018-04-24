@@ -9,7 +9,7 @@ var counting3 = false;
 var timerinterval3 = null;
 
 function startGame(){
-    if(timerinterval3 == null){
+    if(timerinterval3 == null && secondsg3 > 0){
         timerinterval3 = setInterval(timerg3,1000)
         counting3 = true;
         randomcolor.innerHTML = colors[Math.floor(Math.random()*4)]
@@ -22,6 +22,9 @@ function resetGame() {
     anzahlg3 = 0;
     counting3 = false;
     document.getElementById("timer3").innerHTML = secondsg3 + "s";
+    count.innerHTML = anzahlg3;
+    clearInterval(timerinterval3)
+    timerinterval3 = null;
 }
 
 
@@ -31,6 +34,9 @@ function checkRed(){
             anzahlg3++;
             count.innerHTML = anzahlg3;
             randomcolor.innerHTML = colors[Math.floor(Math.random()*4)]
+        } else {
+            anzahlg3--;
+            count.innerHTML = anzahlg3;
         }
     }
 }
@@ -40,6 +46,9 @@ function checkGreen(){
             anzahlg3++;
             count.innerHTML = anzahlg3;
             randomcolor.innerHTML = colors[Math.floor(Math.random()*4)]
+        } else {
+            anzahlg3--;
+            count.innerHTML = anzahlg3;
         }
     }
 }
@@ -49,6 +58,9 @@ function checkBlue(){
             anzahlg3++;
             count.innerHTML = anzahlg3;
             randomcolor.innerHTML = colors[Math.floor(Math.random()*4)]
+        } else {
+            anzahlg3--;
+            count.innerHTML = anzahlg3;
         }
     }
 }
@@ -58,18 +70,23 @@ function checkYellow(){
             anzahlg3++;
             count.innerHTML = anzahlg3;
             randomcolor.innerHTML = colors[Math.floor(Math.random()*4)]
+        } else {
+            anzahlg3--;
+            count.innerHTML = anzahlg3;
         }
     }
 }
 function timerg3(){
-    secondsg3--;
-    document.getElementById("timer3").innerHTML = secondsg3 + "s"
-    if (secondsg3 <= 0) {
-        document.getElementById("timer3").innerHTML = "Game Over";
-        randomcolor.innerHTML = "Game Over"
-        // Anzahl speichern
-        counting3=false;
-        clearInterval(timerinterval3);
-        timerinterval3 = null;
+    if(counting3==true) {
+        secondsg3--;
+        document.getElementById("timer3").innerHTML = secondsg3 + "s"
+        if (secondsg3 <= 0) {
+            document.getElementById("timer3").innerHTML = "Game Over";
+            randomcolor.innerHTML = "Game Over"
+            // Anzahl speichern
+            counting3 = false;
+            clearInterval(timerinterval3);
+            timerinterval3 = null;
+        }
     }
 }
