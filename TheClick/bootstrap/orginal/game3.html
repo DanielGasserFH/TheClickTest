@@ -18,15 +18,24 @@
             <a class="navbar-brand" href="login.html">TheClick</a>
         </div>
         <ul class="nav navbar-nav">
-            <li class="active"><a href="main.html">Home</a></li>
+            <li><a href="main.html">Home</a></li>
             <li><a href="game1.html">Game 1</a></li>
             <li><a href="game2.html">Game 2</a></li>
-            <li><a href="game3.html">Game 3</a></li>
+            <li class="active"><a href="game3.html">Game 3</a></li>
         </ul>
     </div>
 </nav>
 <!--<div class="hintergrund"></div>
 <div class="game3">Game 3 </div>-->
+<div id="randomc"></div>
+<div id="score"></div>
+<button type="button" id="timer3"></button>
+<button onclick="startGame()" id="startg3">Start</button>
+<button id="resetg3">Reset</button>
+<div class="col-6"><button onclick="checkRed()" id="red">Red</button></div>
+<div class="col-6"><button onclick="checkBlue()" id="blue">Blue</button></div>
+<div class="col-6"><button onclick="checkGreen()" id="green">Green</button></div>
+<div class="col-6"><button onclick="checkYellow()" id="yellow">Yellow</button></div>
 
 
 
@@ -34,6 +43,6 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+<script src="js/game3.js"></script>
 </body>
 </html>
