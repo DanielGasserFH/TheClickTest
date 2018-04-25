@@ -152,6 +152,84 @@ color: $green;
 
 #main{
   color: $white;
+
+  .col-5{
+    left: 150px;
+
+    p{
+      margin-top: 50px;
+    }
+  }
+
+
+  .row{
+    left: 150px;
+    margin-top: 50px;
+
+    h1{
+      font-size: 40px;
+      color: $white;
+      left: 165px;
+      margin-bottom: 50px;
+      font-family: Verdana;
+    }
+
+
+
+  }
+
 }
+
+.col-7{
+  color: $white;
+
+  h1{
+    margin-left: 50px;
+    margin-bottom: -40px;
+    margin-top: 30px;
+  }
+
+    .game1beschreibung{
+      margin-left: 50px;
+      margin-top: 50px;
+
+    }
+    .game2beschreibung{
+      @extend .game1beschreibung;
+    }
+  .game3beschreibung{
+    @extend .game1beschreibung;
+  }
+
+}
+
+.testklasse {
+  background-color: #FFFFFF;
+  position: relative;
+}
+
+.testklasse2 {
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  height: 100px;
+  width: 100px;
+  position:absolute;
+  z-index: 2;top:50%;
+  left: 50%; margin-left: -50px;
+  margin-top: -55px;
+  text-align: center;
+}
+
+
+.testbutton {
+  display: block;
+}
+
+
+
+
+
+
+
 
 

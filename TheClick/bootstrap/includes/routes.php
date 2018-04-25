@@ -15,4 +15,15 @@ $route['/logout.html'] = array('controller' => 'LogoutController', 'uniqueName' 
 
 
 $route['/registierung.html'] = array('controller' => 'RegisterController', 'uniqueName' => 'register');
+$route['/registierung'] = array('controller' => 'RegisterController', 'uniqueName' => 'register');
+$route['/register'] = array('controller' => 'RegisterController', 'uniqueName' => 'register');
+
+
+$route['/game3.html'] = array('controller' => 'Game3Controller', 'uniqueName' => 'game3');
+$route['/game3'] = array('controller' => 'Game3Controller', 'uniqueName' => 'game3');
+
+
+$route['/game1.html'] = array('controller' => 'Game1Controller', 'uniqueName' => 'game1');
+$route['/game1'] = array('controller' => 'Game1Controller', 'uniqueName' => 'game1');
+
 

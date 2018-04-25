@@ -150,3 +150,66 @@ label {
 #main {
   color: #FFFFFF;
 }
+/* line 156, ../scss/index.scss */
+#main .col-5 {
+  left: 150px;
+}
+/* line 159, ../scss/index.scss */
+#main .col-5 p {
+  margin-top: 50px;
+}
+/* line 165, ../scss/index.scss */
+#main .row {
+  left: 150px;
+  margin-top: 50px;
+}
+/* line 169, ../scss/index.scss */
+#main .row h1 {
+  font-size: 40px;
+  color: #FFFFFF;
+  left: 165px;
+  margin-bottom: 50px;
+  font-family: Verdana;
+}
+
+/* line 183, ../scss/index.scss */
+.col-7 {
+  color: #FFFFFF;
+}
+/* line 186, ../scss/index.scss */
+.col-7 h1 {
+  margin-left: 50px;
+  margin-bottom: -40px;
+  margin-top: 30px;
+}
+/* line 192, ../scss/index.scss */
+.col-7 .game1beschreibung, .col-7 .game2beschreibung, .col-7 .game3beschreibung {
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+/* line 206, ../scss/index.scss */
+.testklasse {
+  background-color: #FFFFFF;
+  position: relative;
+}
+
+/* line 211, ../scss/index.scss */
+.testklasse2 {
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -55px;
+  text-align: center;
+}
+
+/* line 224, ../scss/index.scss */
+.testbutton {
+  display: block;
+}

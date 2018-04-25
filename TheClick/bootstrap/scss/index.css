@@ -115,5 +115,48 @@ label {
 
 #main {
   color: #FFFFFF; }
+  #main .col-5 {
+    left: 150px; }
+    #main .col-5 p {
+      margin-top: 50px; }
+  #main .row {
+    left: 150px;
+    margin-top: 50px; }
+    #main .row h1 {
+      font-size: 40px;
+      color: #FFFFFF;
+      left: 165px;
+      margin-bottom: 50px;
+      font-family: Verdana; }
+
+.col-7 {
+  color: #FFFFFF; }
+  .col-7 h1 {
+    margin-left: 50px;
+    margin-bottom: -40px;
+    margin-top: 30px; }
+  .col-7 .game1beschreibung, .col-7 .game2beschreibung, .col-7 .game3beschreibung {
+    margin-left: 50px;
+    margin-top: 50px; }
+
+.testklasse {
+  background-color: #FFFFFF;
+  position: relative; }
+
+.testklasse2 {
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -55px;
+  text-align: center; }
+
+.testbutton {
+  display: block; }
 
 /*# sourceMappingURL=index.css.map */
