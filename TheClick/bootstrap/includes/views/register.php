@@ -12,6 +12,7 @@ echo $this->header;
             <p class="col-xs-12">Sie haben sich nun registiert. <a href="login">Klicken Sie hier um sich anzumelden.</a></p>
         </div>
     </div>
+
     <?php else: ?>
     div class="container">
     <div class="row">
