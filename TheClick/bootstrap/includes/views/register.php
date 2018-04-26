@@ -5,13 +5,27 @@ echo $this->header;
 ?>
 
     <?php if($this->registerSuccessful): ?>
-    <!--<h1>Registrierung erfolgreich ... hier gehts zum login</h1>-->
+
+    <!--Hinweis dass die Registierung erfolgreich war.-->
     <div id="main">
         <div class="row">
-            <h1 class="col-xs-12">Registierung erfolgreich</h1>
-            <p class="col-xs-12">Sie haben sich nun registiert. <a href="login">Klicken Sie hier um sich anzumelden.</a></p>
+            <h1 class="col-7">Registierung erfolgreich</h1>
+        </div>
+        <div class="col-5">Sie sind nun registiert.<br>
+            <a href="login">Klicken Sie hier um sich anzumelden.</a>
+
+            <p>Viel Spaß beim Spielen!</p>
         </div>
     </div>
+
+    <!--<div id="main">
+        <div class="row">
+            <h1 class="col-xs-12">Registierung erfolgreich</h1><br>
+            <p class="col-xs-12">Sie haben sich nun registiert. <a href="login">Klicken Sie hier um sich anzumelden.</a></p>
+        </div>
+    </div>-->
+
+
 
     <?php else: ?>
     div class="container">

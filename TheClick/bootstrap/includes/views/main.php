@@ -18,7 +18,7 @@ echo $this->header;
                     <a class="nav-link" href="game1.html">Game1</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Game2</a>
+                    <a class="nav-link" href="game2.html">Game2</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="game3.html">Game3</a>

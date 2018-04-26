@@ -1,8 +1,8 @@
 <?php
 
-class Game1Controller extends Controller
+class Game2Controller extends Controller
 {
-    protected $viewFileName = "game1"; //this will be the View that gets the data...
+    protected $viewFileName = "game2"; //this will be the View that gets the data...
     protected $loginRequired = true;
 
 

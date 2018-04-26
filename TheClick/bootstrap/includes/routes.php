@@ -26,4 +26,6 @@ $route['/game3'] = array('controller' => 'Game3Controller', 'uniqueName' => 'gam
 $route['/game1.html'] = array('controller' => 'Game1Controller', 'uniqueName' => 'game1');
 $route['/game1'] = array('controller' => 'Game1Controller', 'uniqueName' => 'game1');
 
+$route['/game2.html'] = array('controller' => 'Game2Controller', 'uniqueName' => 'game2');
+$route['/game2'] = array('controller' => 'Game2Controller', 'uniqueName' => 'game2');
 
