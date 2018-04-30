@@ -13,10 +13,12 @@
 
 .container{
     width: 60%;
-    background-color: white;
+    background-color: #C0FF28;
     height: 500px;
     margin-bottom: 10px;
     position:relative;
+    border: #B22201;
+    text-align: center;
 }
 
 .button {

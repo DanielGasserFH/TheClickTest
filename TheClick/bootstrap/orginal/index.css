@@ -103,3 +103,29 @@ label {
     left: 150px; } }
 
 /*# sourceMappingURL=index.css.map */
+
+.buttongroup{
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+
+}
+
+.btn-lg{
+  color: white;
+}
+
+.leaderboard{
+  width: 60%;
+  background-color: #C0FF28;
+  height: 500px;
+  margin-bottom: 10px;
+  position:relative;
+  border: #B22201;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.buttons{
+  text-align: center;
+}
