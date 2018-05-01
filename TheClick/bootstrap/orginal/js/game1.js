@@ -3,6 +3,7 @@ var anzahl = 0;
 myTestElement.innerHTML= anzahl;
 var seconds = 10;
 var counting = true;
+var spielnummer= 0
 
 var timerInterval = null;
 
@@ -10,6 +11,9 @@ function startGame(){
     if(timerInterval == null) {
         timerInterval = setInterval(timer,1000);
     }
+
+    spielnummer++
+
 }
 function resetGame() {
     seconds = 10;
@@ -30,10 +34,6 @@ function timer(){
     }
 }
 
-
-
-
-
 var myButton = document.getElementById("counter");
     myButton.onclick = function () {
         if(counting==true) {
@@ -42,4 +42,23 @@ var myButton = document.getElementById("counter");
         }
 }
 
+function gameWon(numAttempts, score)
+{
+    spielnummer = numAttempts
+    anzahl = score
 
+    $.ajax({
+        'url':    'game1',
+        'method': 'post',
+        'data':    {'action': 'saveScore', 'attempts': numAttempts, 'score': score},
+        'success':
+            function(receivedData)
+            {
+                if(receivedData.result)
+                {
+
+                }
+            }
+    });
+
+}
