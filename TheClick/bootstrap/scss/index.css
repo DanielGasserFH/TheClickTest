@@ -3,6 +3,7 @@ body {
   font-family: "Open Sans";
   font-size: 16px;
   font-weight: 600;
+    color: black;
                       /*.game1{
                         margin: 0 auto;
                         margin-top: 60px;
@@ -158,5 +159,15 @@ label {
 
 .testbutton {
   display: block; }
+
+#login{
+  color: black;
+}
+
+.navbar{
+    background-color: #D7ACF6;
+    color: black;
+}
+
 
 /*# sourceMappingURL=index.css.map */

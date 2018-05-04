@@ -8,6 +8,7 @@ body{
   font-family: "Open Sans";
   font-size: 16px;
   font-weight: 600;
+  color: black;
 
                       /*.game1{
                         margin: 0 auto;
@@ -233,10 +234,18 @@ color: $green;
   display: block;
 }
 
+#beschreibungen{
+  color: white;
+}
 
+#login{
+  color: black;
+}
 
-
-
+.navbar{
+  background-color: #D7ACF6;
+  color: black;
+}
 
 
 

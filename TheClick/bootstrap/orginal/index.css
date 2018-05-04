@@ -1,8 +1,9 @@
 body {
-  background: url("../Bilder/hintergrund.jpg") no-repeat center center fixed;
+  background-color: #fcfafe;
   font-family: "Open Sans";
   font-size: 16px;
   font-weight: 600;
+  color: black;
                       /*.game1{
                         margin: 0 auto;
                         margin-top: 60px;
@@ -53,7 +54,8 @@ body {
                     }*/ }
 
 .hintergrund {
-  background: url("../Bilder/hintergrund.jpg"); }
+  background-color: #fcfafe;
+}
 
 h2 {
   font-size: 40px;
@@ -117,15 +119,28 @@ label {
 
 .leaderboard{
   width: 60%;
-  background-color: #C0FF28;
+  background-color:#67386F;
   height: 500px;
   margin-bottom: 10px;
   position:relative;
-  border: #B22201;
   text-align: center;
   margin-top: 30px;
+  color: white;
 }
 
 .buttons{
   text-align: center;
+}
+
+#beschreibungen{
+  color: black;
+}
+
+#login{
+  color: black;
+}
+
+.navbar{
+  background-color: #D7ACF6;
+  color: black;
 }

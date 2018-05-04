@@ -1,13 +1,15 @@
 $white: #FFFFFF;
 $green: #00FF00;
+$balck: black
 
 
 
 body{
-  background: url('../Bilder/hintergrund.jpg') no-repeat center center fixed;
+  background-color: #fcfafe;
   font-family: "Open Sans";
   font-size: 16px;
   font-weight: 600;
+  color: $balck
   /*
                      .game1{
                        margin: 0 auto;
@@ -66,7 +68,7 @@ body{
  }
 
 .hintergrund{
-  background: url("../Bilder/hintergrund.jpg");
+  background-color: #fcfafe;
 }
 
 
@@ -147,4 +149,15 @@ color: $green;
   color: darkred;
 }
 
+#beschreibungen{
+  color: white;
+}
 
+#login{
+  color: black;
+}
+
+.navbar{
+  background-color: #D7ACF6;
+  color: black;
+}
