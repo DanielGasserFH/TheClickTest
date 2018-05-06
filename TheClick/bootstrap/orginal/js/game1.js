@@ -42,6 +42,7 @@ var myButton = document.getElementById("counter");
         }
 };
 
+//gets anzahl and spielnummer and sends them to the controler
 function gameWon(numAttempts, score)
 {
     spielnummer = numAttempts;

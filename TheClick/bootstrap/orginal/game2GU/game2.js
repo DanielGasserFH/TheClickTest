@@ -68,6 +68,7 @@ myButton.onclick = function () {
 
 };
 
+//gets anzahl and spielnummer and sends them to the controler
 function gameWon(numAttempts, score)
 {
     spielnummer = numAttempts;
