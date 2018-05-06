@@ -42,45 +42,43 @@ echo $this->header;
 
 
 
-    <div class="row">
-        <div class="col-7">
-
-            <h1>Game 1 - Prinzip</h1>
-            <div class="game1beschreibung"
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                    nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-                    sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-                    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                    invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-                    et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-            </div>
-
-            <h1>Game 2 - Prinzip</h1>
-            <div class="game2beschreibung"
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                       nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-                        sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-                        Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-                        et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-            </div>
-
-            <h1>Game 3 - Prinzip</h1>
-            <div class="game3beschreibung"
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-                        sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-                         Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-                        et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-            </div>
-
+    <div class="container-fluid" id="beschreibungen">
+        <div class="container">
+            <h1>
+                Herzlich wilkommen zu TheClick
+            </h1>
         </div>
-        <div class="col-5"></div>
-    </div>
+        <div class="container">
+            TheClick besteht aus 3 unterschiedlichen Clickspiel spielmodi:
+        </div>
+        <div class="container">
+            <h1>
+                Spiel 1:
+            </h1>
+            <p>
+                Geschwindigkeit ist das Einzige was zählt!
+                <br>
+                <br>
+                Bei diesem Spielmodus geht es darum, in 10 Sekunden so oft wie möglich auf den Button zu Clicken.
+                <br>
+                So einfach.
+            </p>
+        </div>
+        <div class="container">
+            <h1>
+                Spiel 2:
+            </h1>
+            <p>
+                Geschicklichkeit ist hier gerfagt!
+                <br>
+                <br>
+                Bei Diesem Spielmodus geht es darum, in 30 Sekunden so oft wie möglich auf einen Button zu Clicklen.
+                <br>
+                Der Haken?
+                <br>
+                Jedes mal wenn du auf den Button Clickst verschwindet er und erscheint an einer anderen Stelle auf dem Spielfeld wieder.
+            </p>
+        </div>
 
 
 

@@ -2,18 +2,20 @@ var randomcolor = document.getElementById("randomc");
 var count = document.getElementById("score");
 var anzahlg3 = 0;
 var secondsg3 = 25;
-count.innerHTML = anzahlg3
+count.innerHTML = anzahlg3;
 document.getElementById("timer3").innerHTML = secondsg3 + "s";
 var colors = ["red","blue","green","yellow"];
 var counting3 = false;
 var timerinterval3 = null;
+var spielnummer = 0;
 
 function startGame(){
     if(timerinterval3 == null && secondsg3 > 0){
-        timerinterval3 = setInterval(timerg3,1000)
+        timerinterval3 = setInterval(timerg3,1000);
         counting3 = true;
-        randomcolor.innerHTML = colors[Math.floor(Math.random()*4)]
+        randomcolor.innerHTML = colors[Math.floor(Math.random()*4)];
         console.log("erfolgreich")
+        spielnummer ++;
     }
 }
 
@@ -23,7 +25,7 @@ function resetGame() {
     counting3 = false;
     document.getElementById("timer3").innerHTML = secondsg3 + "s";
     count.innerHTML = anzahlg3;
-    clearInterval(timerinterval3)
+    clearInterval(timerinterval3);
     timerinterval3 = null;
 }
 
@@ -79,14 +81,35 @@ function checkYellow(){
 function timerg3(){
     if(counting3==true) {
         secondsg3--;
-        document.getElementById("timer3").innerHTML = secondsg3 + "s"
+        document.getElementById("timer3").innerHTML = secondsg3 + "s";
         if (secondsg3 <= 0) {
             document.getElementById("timer3").innerHTML = "Game Over";
-            randomcolor.innerHTML = "Game Over"
+            randomcolor.innerHTML = "Game Over";
             // Anzahl speichern
             counting3 = false;
             clearInterval(timerinterval3);
             timerinterval3 = null;
         }
     }
+}
+
+function gameWon(numAttempts, score)
+{
+    spielnummer = numAttempts;
+    anzahlg3 = score;
+
+    $.ajax({
+        'url':    'game1',
+        'method': 'post',
+        'data':    {'action': 'saveScore', 'attempts': numAttempts, 'score': score},
+        'success':
+            function(receivedData)
+            {
+                if(receivedData.result)
+                {
+
+                }
+            }
+    });
+
 }

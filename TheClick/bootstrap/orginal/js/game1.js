@@ -3,7 +3,7 @@ var anzahl = 0;
 myTestElement.innerHTML= anzahl;
 var seconds = 10;
 var counting = true;
-var spielnummer= 0
+var spielnummer= 0;
 
 var timerInterval = null;
 
@@ -24,7 +24,7 @@ function resetGame() {
 
 function timer(){
     seconds--;
-    document.getElementById("counter").innerHTML = seconds + "s"
+    document.getElementById("counter").innerHTML = seconds + "s";
     if (seconds <= 0) {
         document.getElementById("counter").innerHTML = "Zeit um";
         // Anzahl speichern
@@ -40,12 +40,12 @@ var myButton = document.getElementById("counter");
             anzahl++;
             myTestElement.innerHTML = anzahl;
         }
-}
+};
 
 function gameWon(numAttempts, score)
 {
-    spielnummer = numAttempts
-    anzahl = score
+    spielnummer = numAttempts;
+    anzahl = score;
 
     $.ajax({
         'url':    'game1',

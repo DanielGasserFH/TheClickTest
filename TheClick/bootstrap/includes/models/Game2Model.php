@@ -2,22 +2,22 @@
 /**
  * Created by PhpStorm.
  * User: Ludi
- * Date: 01.05.2018
- * Time: 10:01
+ * Date: 06.05.2018
+ * Time: 08:53
  */
 
-class GameModel
+class Game2Model
 {
     public static function saveScoreAndAttempts($playerid, $score, $attempts)
     {
         $db = new Database();
 
         //prevent SQL Injection:
-        $userid = $db->escapeString($playerid);
+        $playerid = $db->escapeString($playerid);
         $score = $db->escapeString($score);
         $attempts = $db->escapeString($attempts);
 
-        $sql = "INSERT INTO game1(`playerid`,`attempts`,`score`) VALUES('".$userid."','".$score."','".$attempts."')";
+        $sql = "INSERT INTO game2(`playerid`,`attempts`,`score`) VALUES('".$playerid."','".$score."','".$attempts."')";
         $db->query($sql);
     }
 

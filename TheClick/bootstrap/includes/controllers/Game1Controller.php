@@ -8,10 +8,12 @@ class Game1Controller extends Controller
 
     public function run()
     {
-        $this->view->title = "Übersicht";
+        $this->view->title = "Game1";
         $this->view->username = $this->user->username;
 
         //$this->view->addresses = AddressModel::getAddressesByUserId($this->user->id);
+
+        $this->checkForSaveScorePost();
     }
 
     private function checkForSaveScorePost()
@@ -23,9 +25,9 @@ class Game1Controller extends Controller
             $playerid = $this->user->id;
 
             //now we need our Model to save the values
-            GameModel::saveScoreAndAttempts($playerid, $score, $attempts); //:: ist only working when we define a Method as static. That means one can use the method without instanciating an object
+            Game1Model::saveScoreAndAttempts($playerid, $score, $attempts); //:: ist only working when we define a Method as static. That means one can use the method without instanciating an object
             //normally we would first make a new object like so:
-            //$gameObj = new GameModel();
+            //$gameObj = new Game1Model();
             //$gameObj->saveScoreAndAttempts($userid, $score, $attempts);
             //but if a method is defined as static - it can be used directly like a function
 
