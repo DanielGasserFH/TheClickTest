@@ -57,22 +57,19 @@
 
 
 
-<button class="button" onclick="startGame()">Start</button>
-<button class="button" onclick="resetGame()">Reset</button>
+<button class="btn-lg btn-danger" onclick="startGame()">Start</button>
+<button class="btn-lg btn-danger" onclick="resetGame()">Reset</button>
 
 <div class="container" id="gameboard">
 
     <div id="test"> </div>
 
     <div class="button" id="button">
-        <button type="button" id="counter"></button>
+        <button class="btn-lg btn-danger" type="button" id="counter"></button>
     </div>
 
 
 </div>
-
-
-
 
 <div class="container leaderboard">
 
