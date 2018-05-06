@@ -10,6 +10,7 @@ echo $this->header;
         <span class="navbar-toggler-icon"></span>
     </button>
 
+    <!-- Verlinkung Menü -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
@@ -26,7 +27,7 @@ echo $this->header;
             </li>
         </ul>
 
-
+<!-- Hinweis wer angemeldet ist und Logout -->
         <form class="form-inline my-2 my-lg-0">
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <p class="nav navbar-nav navbar">Angemeldet als&#160<strong class="username"><?php echo $this->username; ?></strong></p>

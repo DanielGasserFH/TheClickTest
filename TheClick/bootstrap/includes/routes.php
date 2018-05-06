@@ -14,6 +14,9 @@ $route['/logout'] = array('controller' => 'LogoutController', 'uniqueName' => 'l
 $route['/logout.html'] = array('controller' => 'LogoutController', 'uniqueName' => 'logout');
 
 
+
+
+
 $route['/registierung.html'] = array('controller' => 'RegisterController', 'uniqueName' => 'register');
 $route['/registierung'] = array('controller' => 'RegisterController', 'uniqueName' => 'register');
 $route['/register'] = array('controller' => 'RegisterController', 'uniqueName' => 'register');

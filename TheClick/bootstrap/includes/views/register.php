@@ -18,21 +18,16 @@ echo $this->header;
         </div>
     </div>
 
-    <!--<div id="main">
-        <div class="row">
-            <h1 class="col-xs-12">Registierung erfolgreich</h1><br>
-            <p class="col-xs-12">Sie haben sich nun registiert. <a href="login">Klicken Sie hier um sich anzumelden.</a></p>
-        </div>
-    </div>-->
-
-
 
     <?php else: ?>
+
+<!-- Registrierung -->
     div class="container">
     <div class="row">
         <div class="col-lg-1 d-xs-none d-lg-block"></div>
         <div class="col-lg-4 col-xs-12 pt-lg-5 mt-lg-5">
 
+<!-- Registierungsformular -->
     <form class="loginForm" method="post">
         <div class="hintergrundBlack">
             <h2>Create account</h2>

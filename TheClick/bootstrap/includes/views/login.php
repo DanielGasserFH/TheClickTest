@@ -7,6 +7,7 @@ echo $this->header;
         <div class="row">
             <div class="col-lg-1 d-xs-none d-lg-block"></div>
             <div class="col-lg-4 col-xs-12 pt-lg-5 mt-lg-5">
+    <!-- Erstellung Formular -->
     <form class="loginForm" method="post">
         <div class="hintergrundBlack">
             <h2>Login</h2>

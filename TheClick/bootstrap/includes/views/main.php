@@ -9,6 +9,7 @@ echo $this->header;
             <span class="navbar-toggler-icon"></span>
         </button>
 
+        <!-- Verlinkung im Menü -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
@@ -25,7 +26,7 @@ echo $this->header;
                 </li>
             </ul>
 
-
+            <!-- Anzeige wer Angemeldet ist und Logout -->
             <form class="form-inline my-2 my-lg-0">
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <p class="nav navbar-nav navbar">Angemeldet als&#160;<strong class="username"><?php echo $this->username; ?></strong></p>
@@ -41,7 +42,7 @@ echo $this->header;
     </nav>
 
 
-
+<!-- Beschreibung zu den Spielen -->
     <div class="container-fluid" id="beschreibungen">
         <div class="container">
             <h1>

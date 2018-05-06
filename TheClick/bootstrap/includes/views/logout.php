@@ -3,7 +3,7 @@
 echo $this->header;
 
 ?>
-
+<!-- Logoutfenster wird angezeigt -->
     <div id="main">
         <div class="row">
             <h1 class="col-7">Logout erfolgreich</h1>
@@ -16,7 +16,6 @@ echo $this->header;
 
 
     </div>
-
 
 
 
