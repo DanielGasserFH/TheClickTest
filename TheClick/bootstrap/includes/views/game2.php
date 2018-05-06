@@ -73,9 +73,40 @@
 
 
 
-<div class="container">
+<div class="container leaderboard">
 
-    <p>Leaderboard</p>
+    <?php // ab hier wird die datenbank des spiels ausgelesen und in eine list im leaderboard geschrieben
+
+
+    require_once ('dbconfig.php');
+    $db_link = mysqli_connect (
+        DB_HOST,
+        DB_USER,
+        DB_PASS,
+        DB_NAME
+    );
+
+    $sql = "SELECT * FROM game2";
+
+    $db_erg = mysqli_query( $db_link, $sql );
+    if ( ! $db_erg )
+    {
+        die('Ungültige Abfrage: ' . mysqli_error());
+    }
+
+    echo '<table border="1">';
+    while ($zeile = mysqli_fetch_array( $db_erg, MYSQL_ASSOC))
+    {
+        echo "<tr>";
+        echo "<td>". $zeile['playerid'] . "</td>";
+        echo "<td>". $zeile['attempts'] . "</td>";
+        echo "<td>". $zeile['score'] . "</td>";
+        echo "</tr>";
+    }
+    echo "</table>";
+
+    mysqli_free_result( $db_erg );
+    ?>
 
 </div>
 
