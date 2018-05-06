@@ -4,7 +4,7 @@ $green: #00FF00;
 
 
 body{
-  background: url(../Bilder/hintergrund.jpg) no-repeat center center fixed;
+  background-color: #fcfafe;
   font-family: "Open Sans";
   font-size: 16px;
   font-weight: 600;
@@ -233,15 +233,43 @@ color: $green;
 .testbutton {
   display: block;
 }
-
-#beschreibungen{
-  color: white;
-}
-
+//styling navbar
 .navbar{
   background-color: #D7ACF6;
   color: black;
 }
+
+//buttons game 1
+.buttongroup{
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+
+}
+
+.btn-lg{
+  color: white;
+}
+
+.buttons{
+  text-align: center;
+}
+
+
+//styling leaderboard
+.leaderboard{
+  width: 60%;
+  background-color:#67386F;
+  height: 500px;
+  margin-bottom: 10px;
+  position:relative;
+  text-align: center;
+  margin-top: 30px;
+  color: white;
+}
+
+
+
 
 
 
