@@ -59,17 +59,17 @@ body {
 
 h2 {
   font-size: 40px;
-  color: #FFFFFF;
+  color: black;
   text-align: center;
   margin-bottom: 50px;
   font-family: Verdana; }
 
 label {
   font-weight: bold;
-  color: #FFFFFF; }
+  color:  black; }
 
 .form-check label {
-  color: #FFFFFF;
+  color:  black;
   font-size: 12px; }
 
 .loginForm button {
@@ -78,14 +78,14 @@ label {
   margin-bottom: 20px; }
 
 .social {
-  color: #FFFFFF;
+  color: black;
   font-size: 12px;
   text-align: center; }
 
 .signIn {
   text-align: center;
   font-size: 12px;
-  color: #FFFFFF; }
+  color:  black; }
 
 .netzwerke {
   width: 500px;
@@ -133,10 +133,6 @@ label {
 }
 
 #beschreibungen{
-  color: black;
-}
-
-#login{
   color: black;
 }
 
