@@ -23,3 +23,5 @@ class Game2Model
 
     //... and other awesome stuff in the GameModel that we are currently not interessted in...
 }
+
+?>
