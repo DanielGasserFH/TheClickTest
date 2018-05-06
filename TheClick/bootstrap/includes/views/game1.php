@@ -44,11 +44,15 @@ echo $this->header;
 
 
 
-    <div id="test"> </div>
-    <button type="button" id="counter"></button>
-    <button onclick="startGame()">Start</button>
-    <button onclick="resetGame()">Reset</button>
+<div class="container buttons">
 
+    <button class="btn-lg btn-danger" onclick="startGame()">Start</button>
+    <button class="btn-lg btn-danger" type="button" id="counter"></button>
+    <button class="btn-lg btn-danger" onclick="resetGame()">Reset</button>
+
+</div>
+
+<div class="row justify-content-center"><div id="test"></div></div>
 
 <div class="container leaderboard">
 

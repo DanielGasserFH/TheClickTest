@@ -4,6 +4,14 @@ echo $this->header;
 
 ?>
 
+<style>
+    .testklasse {background-color: #FFFFFF; position: relative}
+    .testklasse2 { border-radius: 50%; background-color: #FFFFFF; height: 100px; width: 100px;
+        position:absolute; z-index: 2;top:50%; left: 50%; margin-left: -50px; margin-top: -55px;
+        text-align: center;}
+    .testbutton { display: block}
+</style>
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="main.html">TheClick</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
