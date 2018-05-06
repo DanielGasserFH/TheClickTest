@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.7
+-- version 4.8.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Erstellungszeit: 24. Apr 2018 um 10:39
--- Server-Version: 10.1.30-MariaDB
--- PHP-Version: 7.2.2
+-- Erstellungszeit: 06. Mai 2018 um 10:43
+-- Server-Version: 10.1.31-MariaDB
+-- PHP-Version: 7.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -34,9 +34,41 @@ CREATE TABLE `game` (
   `overallPlaytime` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+-- --------------------------------------------------------
+
 --
--- RELATIONEN DER TABELLE `game`:
+-- Tabellenstruktur für Tabelle `game1`
 --
+
+CREATE TABLE `game1` (
+  `playerid` varchar(50) NOT NULL,
+  `attempts` int(11) NOT NULL,
+  `score` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `game2`
+--
+
+CREATE TABLE `game2` (
+  `playerid` int(11) NOT NULL,
+  `attempts` int(11) NOT NULL,
+  `score` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `game3`
+--
+
+CREATE TABLE `game3` (
+  `playerid` int(11) NOT NULL,
+  `attempts` int(11) NOT NULL,
+  `score` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -50,10 +82,6 @@ CREATE TABLE `players` (
   `email` varchar(50) CHARACTER SET utf8 NOT NULL,
   `passwort` varchar(100) CHARACTER SET utf8 NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- RELATIONEN DER TABELLE `players`:
---
 
 --
 -- Daten für Tabelle `players`
@@ -78,14 +106,6 @@ CREATE TABLE `rounds` (
   `playerid` int(11) NOT NULL,
   `gameid` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- RELATIONEN DER TABELLE `rounds`:
---   `gameid`
---       `game` -> `gameid`
---   `playerid`
---       `players` -> `playerid`
---
 
 --
 -- Indizes der exportierten Tabellen

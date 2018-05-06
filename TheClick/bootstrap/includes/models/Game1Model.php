@@ -23,3 +23,5 @@ class Game1Model
 
     //... and other awesome stuff in the Game1Model that we are currently not interessted in...
 }
+
+?>
