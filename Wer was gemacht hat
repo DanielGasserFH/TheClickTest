@@ -1,8 +1,5 @@
 Daniel Gasser:
 
-<<<<<<< HEAD
-Lukas Gundolf:
-
 Fabian Feyersinger:
 
 Ludwig Bichler:
@@ -29,7 +26,7 @@ game1.js: 41 - 58
 game2.js: 72 - 89
 game3.js:  97 - 114
 kleinere änderungen wegen styling in:
-game1.php, game2.php, game3.php, index.php, main.php 
+game1.php, game2.php, game3.php, index.php, main.php
 
 
 Lukas Gundolf:  Ideenfindung,
@@ -38,4 +35,4 @@ Lukas Gundolf:  Ideenfindung,
                 Anfertigung von Beispielzeichnungen für die Spiele,
                 Implementierung von Game1.js mit Fabian Feyersinger,
                 Implementierung von Game2.js, Game2.html, game2.css,
->>>>>>> 217a4dc0e6da0b07e3bbe15c9580721702cad31e
+
