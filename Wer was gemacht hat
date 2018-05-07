@@ -1,4 +1,4 @@
-Daniel Gasser:
+﻿Daniel Gasser:
 
 	Ideenfindung und Erstellung des Skribbles
 	Erstellung des ER Diagramms
@@ -23,6 +23,17 @@ Also Menü und Logout auf jeder Seite (main/game1/game2/game3) und welcher User 
 
 
 Fabian Feyersinger:
+	Ideenfindung,
+	Konzeption,
+	Implementierung von Game1 (zusammen mit Lukas Gundolf)
+	Implementierung von Game3
+	game3.js: 1 - 102 
+	game1.js: 1 - 53
+	game1.js & game2.js & game3.js: Implementierung des AJAX
+	game3.php: 65 - 83 (Fehlerbehebung bei Verbindung vom Scoreboard mit der DB)
+	game1.php: 63 - 69 (Fehlerbehebung bei VerBindung vom Scoreboard mit der DB)
+	game2.php: Fehlerbehebung bei Verbindung vom Scoreboard mit der DB
+	Optisches Aussehen von game3 (Button und Anzeige der InnerHTML des randomc)
 
 Ludwig Bichler:
 
