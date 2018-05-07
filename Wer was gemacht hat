@@ -1,5 +1,27 @@
 Daniel Gasser:
 
+	Ideenfindung und Erstellung des Skribbles
+	Erstellung des ER Diagramms
+	Umsetzung des ER Diagrammes in phpmyadmin
+	Erstellung der kompletten login.php
+	Erstellung der kompletten register.php
+	Erstellung der logout.php
+	Anpassung des Headers und Footers
+	Erstellung bzw. Anpassung der neuen Routen/Controller
+
+Controller:
+Game1Controller, Game2Controller, Game3Controller, LoginController, LogoutController und RegisterController
+
+Routen:
+register, game1, game2, game3, login, logout
+
+	Änderung der configdb.php
+	Grobe Strukturierung des Menüs der main.php/game1.php /game2.php /game3.php
+Also Menü und Logout auf jeder Seite (main/game1/game2/game3) und welcher User angemeldet ist.
+	In der Datei index.scss die Zeilen 1 bis 210
+
+
+
 Fabian Feyersinger:
 
 Ludwig Bichler:
