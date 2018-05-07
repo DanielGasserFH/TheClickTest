@@ -98,7 +98,7 @@
     $db_erg = mysqli_query( $db_link, $sql );
     if ( ! $db_erg )
     {
-        die('Ungültige Abfrage: ' . mysqli_error());
+        die('Ungültige Abfrage');
     }
 
     echo '<table border="1">';

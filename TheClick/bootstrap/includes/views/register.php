@@ -55,6 +55,7 @@ echo $this->header;
 
         </div>
 
+
         <input type="hidden" name="action" value="register">
 
     </form>
