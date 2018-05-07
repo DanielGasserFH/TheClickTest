@@ -9,9 +9,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/game.css">
-    <link rel="stylesheet" href="scss/game.scss">
-    <link rel="stylesheet" href="scss/game.css">
+    <link rel="stylesheet" href="scss/game3.scss">
+    <link rel="stylesheet" href="scss/game3.css">
 
 </head>
 <body>

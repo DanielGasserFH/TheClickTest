@@ -1,0 +1,35 @@
+/* line 1, ../scss/spiel3.scss */
+.navbar {
+  background-color: #D7ACF6;
+  color: black;
+}
+
+/* line 6, ../scss/spiel3.scss */
+.collapse {
+  background-color: #D7ACF6;
+  color: black;
+}
+
+/* line 11, ../scss/spiel3.scss */
+.container-fluid {
+  color: black;
+}
+
+/* line 15, ../scss/spiel3.scss */
+.leaderboard {
+  width: 60%;
+  background-color: #67386F;
+  height: 500px;
+  position: relative;
+  text-align: center;
+  color: white;
+  margin: auto;
+  margin-top: 50px;
+}
+
+/* line 26, ../scss/spiel3.scss */
+.loginForm button {
+  margin-top: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}

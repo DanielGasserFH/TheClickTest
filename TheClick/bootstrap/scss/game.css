@@ -1,15 +1,5 @@
-body {
-  background-color: #fcfafe;
-  font-family: "Open Sans";
-  font-size: 16px;
-  font-weight: 600;
-  color: black; }
-
 .hintergrund {
   background-color: #fcfafe; }
-
-.loginForm {
-  color: black; }
 
 h2 {
   font-size: 40px;
@@ -18,57 +8,21 @@ h2 {
   margin-bottom: 50px;
   font-family: Verdana; }
 
-label {
-  font-weight: bold;
-  color: black; }
-
-.form-check label {
-  color: black;
-  font-size: 12px; }
-
-.loginForm button {
-  margin-top: 10px;
-  width: 100%;
-  margin-bottom: 20px; }
-
-.social {
-  color: black;
-  font-size: 12px;
-  text-align: center; }
-
-.signIn {
-  text-align: center;
-  font-size: 12px;
-  color: black; }
-
-.netzwerke {
-  width: 500px;
-  margin-bottom: 20px; }
-  .netzwerke img {
-    height: auto; }
-
-.signIn a {
-  color: #00FF00; }
-
-@media only screen and (max-width: 768px) {
-  .netzwerke {
-    width: 100px;
-    height: auto; }
-
-  .loginForm {
-    left: 150px; } }
-.buttongroup {
-  margin-left: auto;
-  margin-right: auto;
-  position: relative; }
-
-.btn-lg {
-  color: darkred; }
-
 #beschreibungen {
   color: black; }
 
 #login {
+  color: black; }
+
+.navbar {
+  background-color: #D7ACF6;
+  color: black; }
+
+.collapse {
+  background-color: #D7ACF6;
+  color: black; }
+
+.container-fluid {
   color: black; }
 
 /*# sourceMappingURL=game.css.map */

@@ -8,10 +8,14 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <!--<link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/game.css">
     <link rel="stylesheet" href="scss/game.scss">
-    <link rel="stylesheet" href="scss/game.css">
+    <link rel="stylesheet" href="scss/game.css">-->
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="scss/spiel1.scss">
+    <link rel="stylesheet" href="scss/spiel1.css">
 
 </head>
 <body>

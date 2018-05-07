@@ -9,9 +9,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/game2.css">
-    <link rel="stylesheet" href="scss/game2.scss">
-    <link rel="stylesheet" href="scss/game2.css">
+    <link rel="stylesheet" href="css/spiel2.css">
+    <link rel="stylesheet" href="scss/spiel2.scss">
+    <link rel="stylesheet" href="scss/spiel2.css">
 
 </head>
 <body>
@@ -71,6 +71,11 @@
 
 
 </div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/game2.js"></script>
+
 
 <div class="leaderboard">
 
@@ -109,10 +114,7 @@
 
 </div>
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/game2.js"></script>
+
 
 
 </body>

@@ -1,0 +1,42 @@
+/* line 1, ../scss/spiel1.scss */
+.navbar {
+  background-color: #D7ACF6;
+  color: black;
+}
+
+/* line 6, ../scss/spiel1.scss */
+.collapse {
+  background-color: #D7ACF6;
+  color: black;
+}
+
+/* line 12, ../scss/spiel1.scss */
+.container-fluid {
+  color: black;
+}
+
+/* line 16, ../scss/spiel1.scss */
+.buttons {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  text-align: center;
+  padding: 30px 30px;
+}
+
+/* line 24, ../scss/spiel1.scss */
+.btn-lg {
+  padding: 30px 30px;
+}
+
+/* line 28, ../scss/spiel1.scss */
+.leaderboard {
+  width: 60%;
+  background-color: #67386F;
+  height: 500px;
+  position: relative;
+  text-align: center;
+  color: white;
+  margin: auto;
+  margin-top: 50px;
+}

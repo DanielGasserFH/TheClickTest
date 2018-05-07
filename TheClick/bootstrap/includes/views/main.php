@@ -9,7 +9,6 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/game.css">
     <link rel="stylesheet" href="scss/game.scss">
     <link rel="stylesheet" href="scss/game.css">
 
@@ -91,6 +90,21 @@
                 Der Haken?
                 <br>
                 Jedes mal wenn du auf den Button Clickst verschwindet er und erscheint an einer anderen Stelle auf dem Spielfeld wieder.
+            </p>
+        </div>
+        <div class="container">
+            <h1>
+                Spiel 3:
+            </h1>
+            <p>
+                Schnelles Denken ist hier nun gefragt!
+                <br>
+                <br>
+                Bei Diesem Spielmodus geht es darum, in einer gewissen Zeit verschiedene Farben anzuklicken.
+                <br>
+                Der Haken?
+                <br>
+                Jedes mal wenn eine flascher Button angeklickt wurde, bekommt man einen Minuspunkt!
             </p>
         </div>
 
