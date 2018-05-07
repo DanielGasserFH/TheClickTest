@@ -1,7 +1,16 @@
 Daniel Gasser:
 
+<<<<<<< HEAD
 Lukas Gundolf:
 
 Fabian Feyersinger:
 
 Ludwig Bichler:
+=======
+Lukas Gundolf:  Ideenfindung,
+                Konzeption,
+                Screens(Logout, Login),
+                Anfertigung von Beispielzeichnungen für die Spiele,
+                Implementierung von Game1.js mit Fabian Feyersinger,
+                Implementierung von Game2.js, Game2.html, game2.css,
+>>>>>>> 217a4dc0e6da0b07e3bbe15c9580721702cad31e
