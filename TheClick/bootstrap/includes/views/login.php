@@ -25,7 +25,7 @@ echo $this->header;
             <div class="row">
                 <a href="http://www.facebook.com/" target="_blank" class="btn btn-primary facebook col-12 col-lg-4"><i class="fa fa-facebook mr-1"></i>Facebook</a>
                 <a href="http://www.twitter.com/" target="_blank" class="btn btn-primary twitter col-12 col-lg-4"><i class="fa fa-twitter mr-1"></i>Twitter</a>
-                <a href="http://www.faceboook.com/" target="_blank" class="btn btn-primary gplus col-12 col-lg-4"><i class="fa fa-google-plus mr-1"></i>Google</a>
+                <a href="https://plus.google.com/" target="_blank" class="btn btn-primary gplus col-12 col-lg-4"><i class="fa fa-google-plus mr-1"></i>Google</a>
             </div>
 
             <div class="signIn">
