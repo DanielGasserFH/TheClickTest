@@ -48,7 +48,7 @@ echo $this->header;
                 <label class="form-check-label" for="exampleCheck1">I have read and agree to the Terms of Use and Privacy Policy</label>
             </div>
             <button type="submit" class="btn btn-success">Create Account</button>
-
+<!-- Verlinkung zum Login, falls Account schon erstellt -->
             <div class="signIn">
                 <p>Already have an account? <a href="login.html"> Sign in</a></p>
             </div>

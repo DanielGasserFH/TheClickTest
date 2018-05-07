@@ -1,4 +1,5 @@
 <?php
+/*Benutzer für Datenbank -- phpmyadmin*/
 
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'theclick');

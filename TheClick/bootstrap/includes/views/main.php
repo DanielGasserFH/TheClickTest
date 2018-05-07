@@ -41,6 +41,7 @@
             <!-- Anzeige wer Angemeldet ist und Logout -->
             <form class="form-inline my-2 my-lg-0">
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <!-- username wird übernommen und angefügt -->
                     <p class="nav navbar-nav navbar">Angemeldet als&#160;<strong class="username"><?php echo $this->username; ?></strong></p>
 
                     <ul class="nav navbar-nav navbar-right">
