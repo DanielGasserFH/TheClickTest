@@ -3,6 +3,15 @@ Daniel Gasser:
 Lukas Gundolf:  Ideenfindung,
                 Konzeption,
                 Screens(Logout, Login),
-                Anfertigung von Beispielzeichnungen für die Spiele,
-                Implementierung von Game1.js mit Fabian Feyersinger,
-                Implementierung von Game2.js, Game2.html, game2.css,
+                Anfertigung von Beispielzeichnungen für:
+                            -Login
+                            -Registrierung
+                            -Game 1
+                            -Game 2
+                            -Game 3
+
+                Implementierung von Game1.js (zusammen mit Fabian Feyersinger),
+                Implementierung von Game2.js,
+                Implementierung von Game2.html,
+                Implementierung von game2.css,
+                Grunddesign der Seiten (Header) nach der Anmeldung/Registrierung
