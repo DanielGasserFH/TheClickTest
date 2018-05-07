@@ -51,7 +51,7 @@ function timer(){
         $.ajax({
             'url':    'game2',
             'method': 'post',
-            'data':    {'action': 'saveScore', 'attempts': numAttempts, 'score': anzahlg3},
+            'data':    {'action': 'saveScore', 'attempts': numAttempts, 'score': anzahl}, // ajax methode um Daten zu speichern (funktioniert nicht (Vermutung: Game2Controller.php wird nicht gefunden))
             'success': function(receivedData) {
                 if(receivedData.result) {
                     //after save change url to scoreboard

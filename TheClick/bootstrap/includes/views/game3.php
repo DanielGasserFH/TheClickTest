@@ -16,11 +16,12 @@
 <body>
 
 <style>
-    .testklasse {background-color: #FFFFFF; position: relative}
+    .testklasse {background-color: #FFFFFF; position: relative}                                             /* Style für das anzeigen der Randomcolor */
     .testklasse2 { border-radius: 50%; background-color: #FFFFFF; height: 100px; width: 100px;
         position:absolute; z-index: 2;top:50%; left: 50%; margin-left: -50px; margin-top: -55px;
         text-align: center;}
     .testbutton { display: block}
+    .testklasse2 #randomc{position: relative; text-align: center; margin-top: 35px}
 </style>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -69,15 +70,15 @@
 </div>
 <div class="container loginForm testklasse">
     <div class="row">
-        <div class="col "><button class="btn btn-danger testbutton" onclick="checkRed()" id="red">Red</button></div>
-        <div class="col"><button class="btn btn-primary testbutton" onclick="checkBlue()" id="blue">Blue</button></div>
+        <div class="col "><button class="btn btn-danger testbutton" onclick="checkRed()" id="red">Red</button></div>                <!-- Button Red, mit der Funktion checkRed() siehe game3.js danger für rote Farbe-->
+        <div class="col"><button class="btn btn-primary testbutton" onclick="checkBlue()" id="blue">Blue</button></div>             <!-- Button Blue, mit der Funktion checkBlue() siehe game3.js primary für blaue Farbe-->
     </div>
     <div class="row justify-content-center">
-        <div class="testklasse2" id="randomc"></div>
+        <div class="testklasse2"><div id="randomc"></div></div>
     </div>
     <div class="row">
-        <div class="col"><button class="btn btn-success testbutton" onclick="checkGreen()" id="green">Green</button></div>
-        <div class="col"><button class="btn btn-warning testbutton" onclick="checkYellow()" id="yellow">Yellow</button></div>
+        <div class="col"><button class="btn btn-success testbutton" onclick="checkGreen()" id="green">Green</button></div>          <!-- Button Green, mit der Funktion checkGreen() siehe game3.js success für grüne Farbe-->
+        <div class="col"><button class="btn btn-warning testbutton" onclick="checkYellow()" id="yellow">Yellow</button></div>       <!-- Button Yellow, mit der Funktion checkYellow() siehe game3.js warning für gelbe Farbe-->
     </div>
 </div>
 
