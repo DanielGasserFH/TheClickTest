@@ -73,7 +73,7 @@
 <script src="js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/game1.js"></script>
 
-<div class="container leaderboard">
+<div class="leaderboard">
 
     <?php // ab hier wird die datenbank des spiels ausgelesen und in eine list im leaderboard geschrieben
 
@@ -109,8 +109,6 @@
     ?>
 
 </div>
-
-
 
 </body>
 </html>
