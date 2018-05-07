@@ -5,11 +5,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../../css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../../scss/spiel2.scss">
+    <link rel="stylesheet" href="../../scss/spiel2.css">
+
+
+    <!--    <link rel="stylesheet" href="../index.css">
     <link rel="stylesheet" href="game2.css">
 
     <link rel="stylesheet" href="game2.css">
-    <link rel="stylesheet" href="../index.scss">
+    <link rel="stylesheet" href="../index.scss"> --!>
 
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
@@ -34,13 +39,16 @@
     <!--<p>info zum spiel</p>-->
 <!--</div>-->
 
+<div class="buttons">
 
-<button class="btn-lg btn-danger" onclick="startGame()">Start</button>
-<button class="btn-lg btn-danger" onclick="resetGame()">Reset</button>
+    <button class="btn-lg btn-danger btn" onclick="startGame()">Start</button>
+    <button class="btn-lg btn-danger btn" onclick="resetGame()">Reset</button>
 
-<div class="container" id="gameboard">
+</div>
 
-    <div id="test"> </div>
+<div class="zähler container-fluid" id="test"> </div>
+
+<div class="container " id="gameboard">
 
     <div class="button" id="button">
         <button class="btn-lg btn-danger" type="button" id="counter"></button>
@@ -49,10 +57,7 @@
 
 </div>
 
-
-
-
-<div class="container">
+<div class="leaderboard">
 
     <p>Leaderboard</p>
 

@@ -1,0 +1,38 @@
+.navbar{
+    background-color: #D7ACF6;
+    color: black;
+}
+
+.collapse{
+    background-color: #D7ACF6;
+    color: black;
+}
+
+.container-fluid{
+    color: black;
+}
+
+.buttons {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+    padding: 30px 30px;
+}
+
+.btn-lg{
+    padding: 30px 30px;
+}
+
+.leaderboard{
+    width: 60%;
+    background-color:#67386F;
+    height: 500px;
+    position:relative;
+    text-align: center;
+    color: white;
+    margin: auto;
+    margin-top: 50px;
+}
+
+

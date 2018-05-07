@@ -54,14 +54,16 @@
     </div>
 </nav>
 
+<div class="buttons">
 
+    <button class="btn-lg btn-danger btn" onclick="startGame()">Start</button>
+    <button class="btn-lg btn-danger btn" onclick="resetGame()">Reset</button>
 
-<button class="btn-lg btn-danger" onclick="startGame()">Start</button>
-<button class="btn-lg btn-danger" onclick="resetGame()">Reset</button>
+</div>
+
+<div class="zähler container-fluid" id="test"> </div>
 
 <div class="container" id="gameboard">
-
-    <div id="test"> </div>
 
     <div class="button" id="button">
         <button class="btn-lg btn-danger" type="button" id="counter"></button>
@@ -70,17 +72,7 @@
 
 </div>
 
-
-
-
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/game2.js"></script>
-
-
-<div class="container leaderboard">
+<div class="leaderboard">
 
     <?php // ab hier wird die datenbank des spiels ausgelesen und in eine list im leaderboard geschrieben
 
@@ -117,7 +109,10 @@
 
 </div>
 
-
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/game2.js"></script>
 
 
 </body>
