@@ -1,0 +1,110 @@
+$white: black;
+$green: #00FF00;
+
+
+
+
+body{
+  background-color: #fcfafe;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 600;
+  color: $white;
+}
+
+.hintergrund{
+  background-color: #fcfafe;
+}
+
+.loginForm{
+  color: $white
+;
+}
+
+
+h2{
+  font-size: 40px;
+  color: $white;
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: Verdana;
+}
+
+
+label{
+  font-weight: bold;
+  color: $white;
+}
+
+.form-check label{
+  color: $white;
+  font-size: 12px;
+}
+
+
+.loginForm button{
+  margin-top: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.social{
+  color: $white;
+  font-size: 12px;
+  text-align: center;
+}
+.signIn{
+  text-align: center;
+  font-size: 12px;
+  color: $white;
+}
+
+
+.netzwerke{
+  width: 500px;
+  margin-bottom: 20px;
+
+  img {
+    height: auto;
+  }
+
+}
+
+.signIn a{
+  color: $green;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .netzwerke{
+    width: 100px;
+    height: auto;
+
+  }
+
+  .loginForm {
+    left: 150px;
+  }
+
+}
+
+.buttongroup{
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+
+}
+
+.btn-lg{
+  color: darkred;
+}
+
+#beschreibungen{
+  color: black;
+}
+
+#login{
+  color: black;
+}
+
+

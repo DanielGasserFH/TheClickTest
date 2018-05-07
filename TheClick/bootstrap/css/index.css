@@ -4,6 +4,7 @@ body {
   font-family: "Open Sans";
   font-size: 16px;
   font-weight: 600;
+  color: black;
                       /*.game1{
                         margin: 0 auto;
                         margin-top: 60px;
@@ -54,147 +55,147 @@ body {
                     }*/
 }
 
-/* line 67, ../scss/index.scss */
+/* line 68, ../scss/index.scss */
 .hintergrund {
   background: url("../Bilder/hintergrund.jpg");
 }
 
-/* line 72, ../scss/index.scss */
+/* line 73, ../scss/index.scss */
 h2 {
   font-size: 40px;
-  color: #FFFFFF;
+  color: black;
   text-align: center;
   margin-bottom: 50px;
   font-family: Verdana;
 }
 
-/* line 81, ../scss/index.scss */
+/* line 82, ../scss/index.scss */
 label {
   font-weight: bold;
-  color: #FFFFFF;
+  color: black;
 }
 
-/* line 86, ../scss/index.scss */
+/* line 87, ../scss/index.scss */
 .form-check label {
-  color: #FFFFFF;
+  color: black;
   font-size: 12px;
 }
 
-/* line 92, ../scss/index.scss */
+/* line 93, ../scss/index.scss */
 .loginForm button {
   margin-top: 10px;
   width: 100%;
   margin-bottom: 20px;
 }
 
-/* line 98, ../scss/index.scss */
+/* line 99, ../scss/index.scss */
 .social {
-  color: #FFFFFF;
+  color: black;
   font-size: 12px;
   text-align: center;
 }
 
-/* line 103, ../scss/index.scss */
+/* line 104, ../scss/index.scss */
 .signIn {
   text-align: center;
   font-size: 12px;
-  color: #FFFFFF;
+  color: black;
 }
 
-/* line 110, ../scss/index.scss */
+/* line 111, ../scss/index.scss */
 .netzwerke {
   width: 500px;
   margin-bottom: 20px;
 }
-/* line 114, ../scss/index.scss */
+/* line 115, ../scss/index.scss */
 .netzwerke img {
   height: auto;
 }
 
-/* line 120, ../scss/index.scss */
+/* line 121, ../scss/index.scss */
 .signIn a {
   color: #00FF00;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 126, ../scss/index.scss */
+  /* line 127, ../scss/index.scss */
   .netzwerke {
     width: 100px;
     height: auto;
   }
 
-  /* line 132, ../scss/index.scss */
+  /* line 133, ../scss/index.scss */
   .loginForm {
     left: 150px;
   }
 }
-/* line 138, ../scss/index.scss */
+/* line 139, ../scss/index.scss */
 .btn.facebook {
   background-color: #3c5a96;
   border-color: #3c5a96;
 }
 
-/* line 143, ../scss/index.scss */
+/* line 144, ../scss/index.scss */
 .btn.twitter {
   background-color: #c1deec;
   border-color: #c1deec;
 }
 
-/* line 148, ../scss/index.scss */
+/* line 149, ../scss/index.scss */
 .btn.gplus {
   background-color: #da4b3e;
   border-color: #da4b3e;
 }
 
-/* line 158, ../scss/index.scss */
+/* line 159, ../scss/index.scss */
 #main {
-  color: #FFFFFF;
+  color: black;
 }
-/* line 161, ../scss/index.scss */
+/* line 162, ../scss/index.scss */
 #main .col-5 {
   left: 150px;
 }
-/* line 164, ../scss/index.scss */
+/* line 165, ../scss/index.scss */
 #main .col-5 p {
   margin-top: 50px;
 }
-/* line 170, ../scss/index.scss */
+/* line 171, ../scss/index.scss */
 #main .row {
   left: 150px;
   margin-top: 50px;
 }
-/* line 174, ../scss/index.scss */
+/* line 175, ../scss/index.scss */
 #main .row h1 {
   font-size: 40px;
-  color: #FFFFFF;
+  color: black;
   left: 165px;
   margin-bottom: 50px;
   font-family: Verdana;
 }
 
-/* line 188, ../scss/index.scss */
+/* line 189, ../scss/index.scss */
 .col-7 {
-  color: #FFFFFF;
+  color: black;
 }
-/* line 191, ../scss/index.scss */
+/* line 192, ../scss/index.scss */
 .col-7 h1 {
   margin-left: 50px;
   margin-bottom: -40px;
   margin-top: 30px;
 }
-/* line 197, ../scss/index.scss */
+/* line 198, ../scss/index.scss */
 .col-7 .game1beschreibung, .col-7 .game2beschreibung, .col-7 .game3beschreibung {
   margin-left: 50px;
   margin-top: 50px;
 }
 
-/* line 214, ../scss/index.scss */
+/* line 215, ../scss/index.scss */
 .testklasse {
   background-color: #FFFFFF;
   position: relative;
 }
 
-/* line 219, ../scss/index.scss */
+/* line 220, ../scss/index.scss */
 .testklasse2 {
   border-radius: 50%;
   background-color: #FFFFFF;
@@ -209,8 +210,42 @@ label {
   text-align: center;
 }
 
-/* line 232, ../scss/index.scss */
+/* line 233, ../scss/index.scss */
 .testbutton {
   display: block;
 }
 
+/* line 237, ../scss/index.scss */
+.navbar {
+  background-color: #D7ACF6;
+  color: black;
+}
+
+/* line 243, ../scss/index.scss */
+.buttongroup {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+/* line 250, ../scss/index.scss */
+.btn-lg {
+  color: white;
+}
+
+/* line 254, ../scss/index.scss */
+.buttons {
+  text-align: center;
+}
+
+/* line 260, ../scss/index.scss */
+.leaderboard {
+  width: 60%;
+  background-color: #67386F;
+  height: 500px;
+  margin-bottom: 10px;
+  position: relative;
+  text-align: center;
+  margin-top: 30px;
+  color: white;
+}

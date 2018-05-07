@@ -4,58 +4,62 @@ body {
   font-size: 16px;
   font-weight: 600;
   color: black;
-                      /*.game1{
-                        margin: 0 auto;
-                        margin-top: 60px;
-                        width: 90%;
-                        height: 800px;
-                        background: $white;
-                        font-size: 30px;
-                        font-family: "Open Sans";
-                        text-align: center;
-                      }
-
-                      .game2{
-                        @extend .game1;
-                      }
-
-                      .game3{
-                        @extend .game1;
-                      }
-
-                    .score1{
-                      position: absolute;
-                      background: $white;
-                      font-size: 30px;
-                      font-family: "Open Sans";
-                      text-align: center;
-
-                      right: 0;
-                      bottom: 0;
-                      margin: 50px;
-                      margin-right: 150px;
-                      width: 600px;
-                      height: 450px;
+  /*
+                     .game1{
+                       margin: 0 auto;
+                       margin-top: 60px;
+                       width: 90%;
+                       height: 800px;
+                       background: $white;
+                       font-size: 30px;
+                       font-family: "Open Sans";
+                       text-align: center;
+                     }
 
 
-                    }
+                     .game2{
+                       @extend .game1;
+                     }
 
-                    .beschreibung{
-                      position: absolute;
-                      margin: 50px;
-                      background: $white;
-                      font-size: 30px;
-                      font-family: "Open Sans";
-                      text-align: center;
+                     .game3{
+                       @extend .game1;
+                     }
 
-                      width: 1000px;
-                      height: 800px;
+                   .score1{
+                     position: absolute;
+                     background: $white;
+                     font-size: 30px;
+                     font-family: "Open Sans";
+                     text-align: center;
 
-                    }*/ }
+                     right: 0;
+                     bottom: 0;
+                     margin: 50px;
+                     margin-right: 150px;
+                     width: 600px;
+                     height: 450px;
+
+
+                   }
+
+                   .beschreibung{
+                     position: absolute;
+                     margin: 50px;
+                     background: $white;
+                     font-size: 30px;
+                     font-family: "Open Sans";
+                     text-align: center;
+
+                     width: 1000px;
+                     height: 800px;
+
+                   }*/ }
 
 .hintergrund {
-  background-color: #fcfafe;
-}
+  background-color: #fcfafe; }
+
+.loginForm {
+  color: black; }
 
 h2 {
   font-size: 40px;
@@ -66,10 +70,10 @@ h2 {
 
 label {
   font-weight: bold;
-  color:  black; }
+  color: black; }
 
 .form-check label {
-  color:  black;
+  color: black;
   font-size: 12px; }
 
 .loginForm button {
@@ -85,7 +89,7 @@ label {
 .signIn {
   text-align: center;
   font-size: 12px;
-  color:  black; }
+  color: black; }
 
 .netzwerke {
   width: 500px;
@@ -103,40 +107,22 @@ label {
 
   .loginForm {
     left: 150px; } }
-
-/*# sourceMappingURL=index.css.map */
-
-.buttongroup{
+.buttongroup {
   margin-left: auto;
   margin-right: auto;
-  position: relative;
+  position: relative; }
 
-}
+.btn-lg {
+  color: darkred; }
 
-.btn-lg{
-  color: white;
-}
+#beschreibungen {
+  color: white; }
 
-.leaderboard{
-  width: 60%;
-  background-color:#67386F;
-  height: 500px;
-  margin-bottom: 10px;
-  position:relative;
-  text-align: center;
-  margin-top: 30px;
-  color: white;
-}
+#login {
+  color: black; }
 
-.buttons{
-  text-align: center;
-}
-
-.beschreibungen{
-  color: black;
-}
-
-.navbar{
+.navbar {
   background-color: #D7ACF6;
-  color: black;
-}
+  color: black; }
+
+/*# sourceMappingURL=index.css.map */
