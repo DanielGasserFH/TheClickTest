@@ -82,12 +82,11 @@
     <?php // ab hier wird die datenbank des spiels ausgelesen und in eine list im leaderboard geschrieben
 
 
-    require_once ('dbconfig.php');
     $db_link = mysqli_connect (
-        DB_HOST,
-        DB_USER,
-        DB_PASS,
-        DB_NAME
+        "localhost",
+        "TheClick",
+        "TheClick1234",
+        "theclick"
     );
 
     $sql = "SELECT * FROM game1";
@@ -99,7 +98,7 @@
     }
 
     echo '<table border="1">';
-    while ($zeile = mysqli_fetch_array( $db_erg, MYSQL_ASSOC))
+    while ($zeile = mysqli_fetch_array( $db_erg))
     {
         echo "<tr>";
         echo "<td>". $zeile['playerid'] . "</td>";

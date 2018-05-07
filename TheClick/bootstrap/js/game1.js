@@ -23,7 +23,17 @@ function timer(){                               //mit dieser methode wird erreic
     document.getElementById("counter").innerHTML = seconds + "s"
     if (seconds <= 0) {
         document.getElementById("counter").innerHTML = "Zeit um"; // wenn der intervall abgelaufen ist wird "zeit um" angezeigt
-        // Anzahl speichern
+        $.ajax({
+            'url':    'game1',
+            'method': 'post',
+            'data':    {'action': 'saveScore', 'attempts': numAttempts, 'score': anzahlg3},
+            'success': function(receivedData) {
+                if(receivedData.result) {
+                    //after save change url to scoreboard
+                    location.href = 'scoreboard';
+                }
+            }
+        });
         counting=false;
         clearInterval(timerInterval);
         timerInterval = null;
