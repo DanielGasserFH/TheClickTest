@@ -6,7 +6,30 @@ Lukas Gundolf:
 Fabian Feyersinger:
 
 Ludwig Bichler:
-=======
+
+game1.js: 41 - 58
+game2.js: 72 - 89
+game3.js:  97 - 114
+Game1Controller aus tutorial implementiert
+Game2Controller aus tutorial implementiert
+Game3Controller aus tutorial implementiert
+Game1Model aus tutorial implementiert
+Game2Model aus tutorial implementiert
+Game3Model aus tutorial implementiert
+main.html 30 - 66
+game1.php: auslesen der jeweiligen db und schreiben in eine tabelle
+game2.php: auslesen der jeweiligen db und schreiben in eine tabelle
+game3.php: auslesen der jeweiligen db und schreiben in eine tabelle
+spiel1.scss/css
+spiel2.scss/css (nach game2.css)
+spiel3.scss/css
+index.scss/css ab 107
+Farbschema
+game1.js: 41 - 58
+game2.js: 72 - 89
+game3.js:  97 - 114
+
+
 Lukas Gundolf:  Ideenfindung,
                 Konzeption,
                 Screens(Logout, Login),
