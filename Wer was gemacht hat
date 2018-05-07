@@ -16,7 +16,7 @@ Game3Controller aus tutorial implementiert
 Game1Model aus tutorial implementiert
 Game2Model aus tutorial implementiert
 Game3Model aus tutorial implementiert
-main.html 30 - 66
+main.php 30 - 66
 game1.php: auslesen der jeweiligen db und schreiben in eine tabelle
 game2.php: auslesen der jeweiligen db und schreiben in eine tabelle
 game3.php: auslesen der jeweiligen db und schreiben in eine tabelle
@@ -28,6 +28,8 @@ Farbschema
 game1.js: 41 - 58
 game2.js: 72 - 89
 game3.js:  97 - 114
+kleinere änderungen wegen styling in:
+game1.php, game2.php, game3.php, index.php, main.php 
 
 
 Lukas Gundolf:  Ideenfindung,
