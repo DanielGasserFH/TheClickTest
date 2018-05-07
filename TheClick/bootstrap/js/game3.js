@@ -83,7 +83,17 @@ function timerg3(){
         if (secondsg3 <= 0) {
             document.getElementById("timer3").innerHTML = "Game Over";
             randomcolor.innerHTML = "Game Over"
-            // Anzahl speichern
+            $.ajax({
+                'url':    'game3',
+                'method': 'post',
+                'data':    {'action': 'saveScore', 'attempts': numAttempts, 'score': anzahlg3},
+                'success': function(receivedData) {
+                    if(receivedData.result) {
+                        //after save change url to scoreboard
+                        location.href = 'scoreboard';
+                    }
+                }
+            });
             counting3 = false;
             clearInterval(timerinterval3);
             timerinterval3 = null;

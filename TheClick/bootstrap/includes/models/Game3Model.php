@@ -17,7 +17,7 @@ class Game3Model
         $score = $db->escapeString($score);
         $attempts = $db->escapeString($attempts);
 
-        $sql = "INSERT INTO game2(`playerid`,`attempts`,`score`) VALUES('".$playerid."','".$score."','".$attempts."')";
+        $sql = "INSERT INTO game3(`playerid`,`attempts`,`score`) VALUES('".$playerid."','".$score."','".$attempts."')";
         $db->query($sql);
     }
 
