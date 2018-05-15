@@ -32,7 +32,8 @@ function newPosition() {                                        // diese methode
 
 function startGame(){                               //diese methode startet das spiel, indem ein ein intervall erzeugt wird (sofern noch keines existiert)
     if(timerInterval == null) {
-        timerInterval = setInterval(timer,1000);    //setzt die variable game2started auf true um spielen zu können.
+        timerInterval = setInterval(timer,1000);//setzt die variable game2started auf true um spielen zu können.
+        spielnummer++;
     }
     game2Started = true;
 }
@@ -79,3 +80,25 @@ myButton.onclick = function () {                                            //di
     }
 
 };
+
+//gets anzahl and spielnummer and sends them to the controler
+function gameWon(numAttempts, score)
+{
+    spielnummer = numAttempts;
+    anzahl = score;
+
+    $.ajax({
+        'url':    'game1',
+        'method': 'post',
+        'data':    {'action': 'saveScore', 'attempts': numAttempts, 'score': score},
+        'success':
+            function(receivedData)
+            {
+                if(receivedData.result)
+                {
+
+                }
+            }
+    });
+
+}

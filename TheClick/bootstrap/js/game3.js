@@ -14,6 +14,7 @@ function startGame(){                                                           
         counting3 = true;
         randomcolor.innerHTML = colors[Math.floor(Math.random()*4)]
         console.log("erfolgreich")
+        spielnummer++;
     }
 }
 
@@ -104,4 +105,26 @@ function timerg3(){                                                             
 
         }
     }
+}
+
+//gets anzahl and spielnummer and sends them to the controler
+function gameWon(numAttempts, score)
+{
+    spielnummer = numAttempts;
+    anzahlg3 = score;
+
+    $.ajax({
+        'url':    'game1',
+        'method': 'post',
+        'data':    {'action': 'saveScore', 'attempts': numAttempts, 'score': score},
+        'success':
+            function(receivedData)
+            {
+                if(receivedData.result)
+                {
+
+                }
+            }
+    });
+
 }
