@@ -83,20 +83,25 @@ function timerg3(){                                                             
         if (secondsg3 <= 0) {                                                      //Abbruch-Bedingung des Timers, counting wird auf false gestellt und Interval gecleart, AJAX aufgerufen
             document.getElementById("timer3").innerHTML = "Game Over";
             randomcolor.innerHTML = "Game Over"
-            $.ajax({
-                'url':    'game3',
-                'method': 'post',
-                'data':    {'action': 'saveScore', 'attempts': numAttempts, 'score': anzahlg3}, // ajax methode um Daten zu speichern (funktioniert nicht (Vermutung: Game3Controller.php wird nicht gefunden))
-                'success': function(receivedData) {
-                    if(receivedData.result) {
-                        //after save change url to scoreboard
-                        location.href = 'scoreboard';
-                    }
-                }
-            });
+
             counting3 = false;
             clearInterval(timerinterval3);
             timerinterval3 = null;
+
+
+            $.ajax({
+                'url':    'game3',
+                'method': 'post',
+                'data':    {'action': 'saveScore', 'gametype': 3, 'score': anzahlg3},   // ajax methode um Daten zu speichern (funktioniert nicht (Vermutung: Game1Controller.php wird nicht gefunden))
+                'success': function(receivedData) {
+                    if(receivedData.result) {
+                        //after save change url to scoreboard
+                        //location.href = 'scoreboard';
+                        location.reload();
+                    }
+                }
+            });
+
         }
     }
 }

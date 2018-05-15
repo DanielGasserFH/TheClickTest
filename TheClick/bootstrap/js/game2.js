@@ -48,20 +48,23 @@ function timer(){
     document.getElementById("counter").innerHTML = seconds + "s"            //stellt den timer auf dem button dar
     if (seconds <= 0) {
         document.getElementById("counter").innerHTML = "Zeit um";           //wenn seconds 0 ist steht auf dem button zeit um.
-        $.ajax({
-            'url':    'game2',
-            'method': 'post',
-            'data':    {'action': 'saveScore', 'attempts': numAttempts, 'score': anzahl}, // ajax methode um Daten zu speichern (funktioniert nicht (Vermutung: Game2Controller.php wird nicht gefunden))
-            'success': function(receivedData) {
-                if(receivedData.result) {
-                    //after save change url to scoreboard
-                    location.href = 'scoreboard';
-                }
-            }
-        });
         game2Started=false;
         clearInterval(timerInterval);                                       //ausserdem wird das intervall gelöscht und die game2started wieder auf false gesetzt, dass man nicht mehr klicken kann
         timerInterval = null;
+
+        $.ajax({
+            'url':    'game2',
+            'method': 'post',
+            'data':    {'action': 'saveScore', 'gametype': 2, 'score': anzahl},   // ajax methode um Daten zu speichern (funktioniert nicht (Vermutung: Game1Controller.php wird nicht gefunden))
+            'success': function(receivedData) {
+                if(receivedData.result) {
+                    //after save change url to scoreboard
+                    //location.href = 'scoreboard';
+                    location.reload();
+                }
+            }
+        });
+
     }
 }
 

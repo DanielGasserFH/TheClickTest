@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="scss/game.css">-->
 
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="scss/spiel1.scss">
     <link rel="stylesheet" href="scss/spiel1.css">
 
 </head>
@@ -72,44 +71,37 @@
 
 
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/game1.js"></script>
 
 <div class="leaderboard">
 
-    <?php // ab hier wird die datenbank des spiels ausgelesen und in eine list im leaderboard geschrieben
 
 
-    $db_link = mysqli_connect (
-        "localhost",
-        "TheClick",
-        "TheClick1234",
-        "theclick"
-    );
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Username</th>
+            <th scope="col">Score</th>
+        </tr>
+        </thead>
+        <tbody>
+        <?php $index = 1; ?>
+        <?php foreach ($this->scores as $score): ?>
+            <tr>
+                <th scope="row"><?php echo $index; ?></th>
+                <td><?php echo $score->username; ?></td>
+                <td><?php echo $score->overallPoints; ?></td>
+            </tr>
+        <?php $index++; ?>
+        <?php endforeach; ?>
+        </tbody>
+    </table>
 
-    $sql = "SELECT * FROM game1";
 
-    $db_erg = mysqli_query( $db_link, $sql );
-    if ( ! $db_erg )
-    {
-        die('Ungültige Abfrage');
-    }
-
-    echo '<table border="1">';
-    while ($zeile = mysqli_fetch_array( $db_erg))
-    {
-        echo "<tr>";
-        echo "<td>". $zeile['playerid'] . "</td>";
-        echo "<td>". $zeile['attempts'] . "</td>";
-        echo "<td>". $zeile['score'] . "</td>";
-        echo "</tr>";
-    }
-    echo "</table>";
-
-    mysqli_free_result( $db_erg );
-    ?>
 
 </div>
 

@@ -23,20 +23,23 @@ function timer(){                               //mit dieser methode wird erreic
     document.getElementById("counter").innerHTML = seconds + "s"
     if (seconds <= 0) {
         document.getElementById("counter").innerHTML = "Zeit um"; // wenn der intervall abgelaufen ist wird "zeit um" angezeigt
-        $.ajax({
-            'url':    'game1',
-            'method': 'post',
-            'data':    {'action': 'saveScore', 'attempts': numAttempts, 'score': anzahl},   // ajax methode um Daten zu speichern (funktioniert nicht (Vermutung: Game1Controller.php wird nicht gefunden))
-            'success': function(receivedData) {
-                if(receivedData.result) {
-                    //after save change url to scoreboard
-                    location.href = 'scoreboard';
-                }
-            }
-        });
         counting=false;
         clearInterval(timerInterval);
         timerInterval = null;
+
+        $.ajax({
+            'url':    'game1',
+            'method': 'post',
+            'data':    {'action': 'saveScore', 'gametype': 1, 'score': anzahl},   // ajax methode um Daten zu speichern (funktioniert nicht (Vermutung: Game1Controller.php wird nicht gefunden))
+            'success': function(receivedData) {
+                if(receivedData.result) {
+                    //after save change url to scoreboard
+                    //location.href = 'scoreboard';
+                    location.reload();
+                }
+            }
+        });
+
     }
 }
 
