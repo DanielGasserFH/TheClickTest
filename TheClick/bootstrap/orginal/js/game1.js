@@ -39,6 +39,7 @@ var myButton = document.getElementById("counter");
         if(counting==true) {
             anzahl++;
             myTestElement.innerHTML = anzahl;
+
         }
 };
 
